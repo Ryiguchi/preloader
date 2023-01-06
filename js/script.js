@@ -65,8 +65,8 @@ const setPictures = async () => {
 
     header.insertAdjacentHTML("afterend", markup);
 
-    imgGallery.classList.remove("hidden");
     preloadEl.classList.add("hidden");
+    imgGallery.style.opacity = 1;
   } catch (error) {
     handleErrors(error);
   }
